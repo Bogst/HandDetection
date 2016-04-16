@@ -1,0 +1,61 @@
+﻿Build started 3/5/2016 6:24:50 PM.
+     1>Project "D:\Programele Mele\C++\Cuda\CudaOpenCV\CudaOpenCV\CudaOpenCV.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         D:\Programe\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "D:\Programele Mele\C++\Cuda\CudaOpenCV\CudaOpenCV\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\OrderAdChaos\AppData\Local\Temp\tmpc08a058a07324176b6581463c25035fc.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Programe\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Programele Mele\C++\Cuda\CudaOpenCV\CudaOpenCV\kernel.cu"
+         
+         D:\Programele Mele\C++\Cuda\CudaOpenCV\CudaOpenCV>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Programe\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Programele Mele\C++\Cuda\CudaOpenCV\CudaOpenCV\kernel.cu" 
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(55): warning : variable "c" was declared but never referenced
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(94): warning : variable "c" was declared but never referenced
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(203): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(209): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(216): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(222): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(55): warning : variable "c" was declared but never referenced
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(94): warning : variable "c" was declared but never referenced
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(203): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(209): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(216): warning : transfer of control bypasses initialization of:
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(222): warning : transfer of control bypasses initialization of:
+         kernel.cu
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275): warning C4533: initialization of 'DimBlock' is skipped by 'goto Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(227) : see declaration of 'DimBlock'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+     1>D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275): warning C4533: initialization of 'DimGrid' is skipped by 'goto Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(226) : see declaration of 'DimGrid'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(227) : see declaration of 'DimBlock'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(226) : see declaration of 'DimGrid'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(227) : see declaration of 'DimBlock'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(226) : see declaration of 'DimGrid'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(227) : see declaration of 'DimBlock'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(226) : see declaration of 'DimGrid'
+                 D:/Programele Mele/C++/Cuda/CudaOpenCV/CudaOpenCV/kernel.cu(275) : see declaration of 'Error'
+       ClCompile:
+         D:\Programe\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\..\..\include" /Zi /nologo /W3 /WX- /Od /D WIN32 /D WIN64 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Main.cpp
+         Main.cpp
+       Link:
+         D:\Programe\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\CudaOpenCV.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64" /LIBPATH:"D:\Programe\Microsoft Visual Studio 12.0\opencv\build\x64\vc12\lib" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_world310d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\CudaOpenCV.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\CudaOpenCV.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         x64\Debug\Main.obj
+         CudaOpenCV.vcxproj -> D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\CudaOpenCV.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Programele Mele\C++\Cuda\CudaOpenCV\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "D:\Programele Mele\C++\Cuda\CudaOpenCV\CudaOpenCV\CudaOpenCV.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.62
